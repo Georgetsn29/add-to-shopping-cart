@@ -82,9 +82,9 @@ function addToCard(key) {
 function reloadCard() {
     listCard.innerHTML = ''
     let count = 0
-    let totalPrice = 0
+    let totalPrice = 0 
     listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price + '₾'
+        totalPrice = totalPrice + value.price
         count = count + value.quantity
         if(value != null) {
             let newDiv = document.createElement('li')
@@ -100,7 +100,7 @@ function reloadCard() {
                 listCard.appendChild(newDiv)
         }
     })
-    total.innerText = totalPrice.toLocaleString()
+    total.innerText = totalPrice.toLocaleString() + '₾'
     quantity.innerText = count
 }
 

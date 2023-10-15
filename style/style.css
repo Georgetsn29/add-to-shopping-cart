@@ -81,6 +81,11 @@ header .shopping span {
     width: 100%;
     padding: 10px;
     cursor: pointer;
+    border: none;
+}
+
+.list .item button:hover {
+    background-color: #1c1f25c5;
 }
 
 .card {
